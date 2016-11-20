@@ -1,0 +1,746 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 9300.16.0708.1543                                -->
+<workbook source-build='9.3.4 (9300.16.0708.1543)' source-platform='mac' version='9.3' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='business_pipe' inline='true' name='textscan.1cdzs0b0lp4dso1fixn9x1dyhdvy' version='9.3'>
+      <connection class='textscan' directory='/Users/sz/sz_projects/Yelp_dataset' filename='business_pipe.txt' password='' server=''>
+        <relation name='business_pipe.txt' table='[business_pipe#txt]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator='|' text-qualifier=''>
+            <column datatype='string' name='business_id' ordinal='0' />
+            <column datatype='string' name='business_city' ordinal='1' />
+            <column datatype='string' name='business_latitude' ordinal='2' />
+            <column datatype='integer' name='business_longitude' ordinal='3' />
+            <column datatype='real' name='business_name' ordinal='4' />
+            <column datatype='string' name='business_review_count' ordinal='5' />
+            <column datatype='boolean' name='business_stars' ordinal='6' />
+            <column datatype='string' name='business_state' ordinal='7' />
+            <column datatype='string' name='business_Take-out' ordinal='8' />
+            <column datatype='string' name='business_Alcohol' ordinal='9' />
+            <column datatype='boolean' name='business_NoiseLevel' ordinal='10' />
+            <column datatype='boolean' name='business_Attire' ordinal='11' />
+            <column datatype='boolean' name='business_Delivery' ordinal='12' />
+            <column datatype='boolean' name='business_HasTV' ordinal='13' />
+            <column datatype='boolean' name='business_TakesReservations' ordinal='14' />
+            <column datatype='boolean' name='business_WheelchairAccessible' ordinal='15' />
+            <column datatype='boolean' name='business_WaiterService' ordinal='16' />
+            <column datatype='boolean' name='business_AcceptsCreditCards' ordinal='17' />
+            <column datatype='real' name='business_GoodforKids' ordinal='18' />
+            <column datatype='string' name='business_GoodForGroups' ordinal='19' />
+            <column datatype='string' name='business_PriceRange' ordinal='20' />
+            <column datatype='string' name='business_categories' ordinal='21' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>business_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[business_id]</local-name>
+            <parent-name>[business_pipe.txt]</parent-name>
+            <remote-alias>business_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>business_city</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[business_city]</local-name>
+            <parent-name>[business_pipe.txt]</parent-name>
+            <remote-alias>business_city</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>business_latitude</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[business_latitude]</local-name>
+            <parent-name>[business_pipe.txt]</parent-name>
+            <remote-alias>business_latitude</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>business_longitude</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[business_longitude]</local-name>
+            <parent-name>[business_pipe.txt]</parent-name>
+            <remote-alias>business_longitude</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>business_name</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[business_name]</local-name>
+            <parent-name>[business_pipe.txt]</parent-name>
+            <remote-alias>business_name</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>business_review_count</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[business_review_count]</local-name>
+            <parent-name>[business_pipe.txt]</parent-name>
+            <remote-alias>business_review_count</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>business_stars</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[business_stars]</local-name>
+            <parent-name>[business_pipe.txt]</parent-name>
+            <remote-alias>business_stars</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>1</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;bool&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>business_state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[business_state]</local-name>
+            <parent-name>[business_pipe.txt]</parent-name>
+            <remote-alias>business_state</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>business_Take-out</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[business_Take-out]</local-name>
+            <parent-name>[business_pipe.txt]</parent-name>
+            <remote-alias>business_Take-out</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>business_Alcohol</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[business_Alcohol]</local-name>
+            <parent-name>[business_pipe.txt]</parent-name>
+            <remote-alias>business_Alcohol</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>business_NoiseLevel</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[business_NoiseLevel]</local-name>
+            <parent-name>[business_pipe.txt]</parent-name>
+            <remote-alias>business_NoiseLevel</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>1</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;bool&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>business_Attire</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[business_Attire]</local-name>
+            <parent-name>[business_pipe.txt]</parent-name>
+            <remote-alias>business_Attire</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>1</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;bool&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>business_Delivery</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[business_Delivery]</local-name>
+            <parent-name>[business_pipe.txt]</parent-name>
+            <remote-alias>business_Delivery</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>1</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;bool&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>business_HasTV</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[business_HasTV]</local-name>
+            <parent-name>[business_pipe.txt]</parent-name>
+            <remote-alias>business_HasTV</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>1</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;bool&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>business_TakesReservations</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[business_TakesReservations]</local-name>
+            <parent-name>[business_pipe.txt]</parent-name>
+            <remote-alias>business_TakesReservations</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>1</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;bool&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>business_WheelchairAccessible</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[business_WheelchairAccessible]</local-name>
+            <parent-name>[business_pipe.txt]</parent-name>
+            <remote-alias>business_WheelchairAccessible</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>1</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;bool&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>business_WaiterService</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[business_WaiterService]</local-name>
+            <parent-name>[business_pipe.txt]</parent-name>
+            <remote-alias>business_WaiterService</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>1</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;bool&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>business_AcceptsCreditCards</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[business_AcceptsCreditCards]</local-name>
+            <parent-name>[business_pipe.txt]</parent-name>
+            <remote-alias>business_AcceptsCreditCards</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>1</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;bool&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>business_GoodforKids</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[business_GoodforKids]</local-name>
+            <parent-name>[business_pipe.txt]</parent-name>
+            <remote-alias>business_GoodforKids</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>business_GoodForGroups</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[business_GoodForGroups]</local-name>
+            <parent-name>[business_pipe.txt]</parent-name>
+            <remote-alias>business_GoodForGroups</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>business_PriceRange</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[business_PriceRange]</local-name>
+            <parent-name>[business_pipe.txt]</parent-name>
+            <remote-alias>business_PriceRange</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>business_categories</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[business_categories]</local-name>
+            <parent-name>[business_pipe.txt]</parent-name>
+            <remote-alias>business_categories</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[business_pipe.txt]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;|&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='quote-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='business AcceptsCreditCards' datatype='boolean' name='[business_AcceptsCreditCards]' role='dimension' type='nominal' />
+      <column caption='business Alcohol' datatype='string' name='[business_Alcohol]' role='dimension' type='nominal' />
+      <column caption='business Attire' datatype='boolean' name='[business_Attire]' role='dimension' type='nominal' />
+      <column caption='business Delivery' datatype='boolean' name='[business_Delivery]' role='dimension' type='nominal' />
+      <column caption='business GoodForGroups' datatype='string' name='[business_GoodForGroups]' role='dimension' type='nominal' />
+      <column caption='business GoodforKids' datatype='real' name='[business_GoodforKids]' role='measure' type='quantitative' />
+      <column caption='business HasTV' datatype='boolean' name='[business_HasTV]' role='dimension' type='nominal' />
+      <column caption='business NoiseLevel' datatype='boolean' name='[business_NoiseLevel]' role='dimension' type='nominal' />
+      <column caption='business PriceRange' datatype='string' name='[business_PriceRange]' role='dimension' type='nominal' />
+      <column caption='business Take-out' datatype='string' name='[business_Take-out]' role='dimension' type='nominal' />
+      <column caption='business TakesReservations' datatype='boolean' name='[business_TakesReservations]' role='dimension' type='nominal' />
+      <column caption='business WaiterService' datatype='boolean' name='[business_WaiterService]' role='dimension' type='nominal' />
+      <column caption='business WheelchairAccessible' datatype='boolean' name='[business_WheelchairAccessible]' role='dimension' type='nominal' />
+      <column caption='Business Categories' datatype='string' name='[business_categories]' role='dimension' type='nominal' />
+      <column caption='Business City' datatype='string' name='[business_city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Business Id' datatype='string' name='[business_id]' role='dimension' type='nominal' />
+      <column caption='Business Latitude' datatype='string' name='[business_latitude]' role='dimension' type='nominal' />
+      <column aggregation='Avg' caption='Business Longitude' datatype='integer' name='[business_longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Business Name' datatype='real' name='[business_name]' role='measure' type='quantitative' />
+      <column caption='Business Review Count' datatype='string' name='[business_review_count]' role='dimension' type='nominal' />
+      <column caption='Business Stars' datatype='boolean' name='[business_stars]' role='dimension' type='nominal' />
+      <column caption='Business State' datatype='string' name='[business_state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <drill-paths>
+        <drill-path name='business_state, business_city'>
+          <field>[business_state]</field>
+          <field>[business_city]</field>
+        </drill-path>
+      </drill-paths>
+      <layout dim-ordering='alphabetic' dim-percentage='0.500585' measure-ordering='alphabetic' measure-percentage='0.499415' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='business_pipe' name='textscan.1cdzs0b0lp4dso1fixn9x1dyhdvy' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='textscan.1cdzs0b0lp4dso1fixn9x1dyhdvy'>
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='tab_base' value='true' />
+            <format attr='enabled' id='um_lcover' value='true' />
+            <format attr='enabled' id='tab_coastline' value='false' />
+            <format attr='enabled' id='pp2_line' value='false' />
+            <format attr='enabled' id='light_adm0_bnd' value='false' />
+            <format attr='enabled' id='light_adm0_lbl' value='false' />
+            <format attr='enabled' id='um_adm0_bnd' value='true' />
+            <format attr='enabled' id='um_adm0_lbl' value='true' />
+            <format attr='enabled' id='light_pp2_statebounds' value='false' />
+            <format attr='enabled' id='light_pp2_statelabels' value='false' />
+            <format attr='enabled' id='pp2_adminlabels' value='false' />
+            <format attr='enabled' id='pp2_statebounds' value='true' />
+            <format attr='enabled' id='pp2_statelabels' value='true' />
+            <format attr='enabled' id='countybounds' value='false' />
+            <format attr='enabled' id='countylabels' value='false' />
+            <format attr='enabled' id='zipbounds' value='false' />
+            <format attr='enabled' id='ziplabels' value='false' />
+            <format attr='enabled' id='tab_areabounds' value='false' />
+            <format attr='enabled' id='tab_arealabels' value='false' />
+            <format attr='enabled' id='tab_msabounds' value='false' />
+            <format attr='enabled' id='tab_msalabels' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[textscan.1cdzs0b0lp4dso1fixn9x1dyhdvy].[sum:Number of Records:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[textscan.1cdzs0b0lp4dso1fixn9x1dyhdvy].[Latitude (generated)]</rows>
+        <cols>[textscan.1cdzs0b0lp4dso1fixn9x1dyhdvy].[Longitude (generated)]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows source-height='28'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='1' param='[textscan.1cdzs0b0lp4dso1fixn9x1dyhdvy].[sum:Number of Records:qk]' type='size' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
